@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Connectify</title>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <h2>Connect to Chat</h2>
+        <form id="passwordForm">
+            <label for="username">Enter Username:</label>
+            <input type="text" id="username" required placeholder="Your username">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" required placeholder="Your password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="chat" class="chat">
+        <h2>Chat Room</h2>
+        <div id="messages"></div>
+        <input type="text" id="message" placeholder="Type a message" required>
+        <button id="send">Send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
